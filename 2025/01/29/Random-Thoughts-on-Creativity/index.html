@@ -78,7 +78,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"zh.dailyminz.org","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"zh.dailyminz.org","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -420,11 +420,11 @@
 为什么是“又”？因为各类跨省的“联考”数学科目经常出现一些非常唬人（争议性强）的题目，例如：</p>
 <ol>
 <li>2023年，“四省联考”第16题（填空题的最后一道）；<br />
-<img src="q1.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+<img src="q1.png" alt="" loading="lazy" /></li>
 <li>2024年初，“九省联考”第19题（最后一道大题），从密码学的ElGamal算法情景设题，涉及费马小定理等数论知识；<br />
-<img src="q2.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+<img src="q2.png" alt="" loading="lazy" /></li>
 <li>今年“八省联考”，第11题（多选题最后一道），涉及了纽结理论。当然，这道题不需要懂得拓扑学也可以轻松选出A和D这两个正确答案（B和C则需要画图或现场动手搓绳子验证）；<br />
-<img src="q3.png" srcset="/img/loading.gif" lazyload alt="" /></li>
+<img src="q3.png" alt="" loading="lazy" /></li>
 </ol>
 <p>上述题目在网络上都有大量的优秀讲解。读者若有兴趣，也可以尝试在不使用高等数学知识的情况下完成这些题目。</p>
 <p>这三道题都因与书本内容严重脱节而引起了巨大的争议。大家认为，这些远远超出正常高中生知识范围的题目，即使是压轴题，也不具备有效筛选卓越学生的能力，相反，这些运用大学知识可以轻松解决的问题被强行要求以高中知识作答，这种做法无论是在考察知识运用还是学科素养方面都是无效的，还会误导一些同学将精力用在练习这种“偏门”题目上，因小失大。</p>
@@ -527,10 +527,10 @@
 <p>这样做的后果是，尽管量化考核的数字可以做得十分漂亮，但是，最后也只剩下这个数字做的漂亮。人的成长不可能用一个标量就可以轻易概括，更何况考试成绩还有各科目的分量呢，对吧？</p>
 <p>在应试教育下，高强度的训练最大的贡献就是瓦解学习的内生动力，进而破坏创造力。应试的训练对锻炼思维没有任何帮助，相反，面对早已定好标准答案的题目，思维被迫在训练中收敛。与动态的社会环境隔绝，切断了他们接触复杂情景问题的渠道。在这种封闭的环境中，即使提供自由的行动窗口，无处不在的干涉与引导也会乘着行政系统和应试教条的惯性横贯在每一个人面前。</p>
 <p>与之形成鲜明对比的是发达国家的教育理念与独特校园文化。在全国大多数地区的孩子们还在一遍又一遍地记忆公式、做着繁琐的计算时，欧美国家已经允许在考试中公然使用计算器和查阅公式（在中国，少数发达地区如今也开始试行）；在全国的孩子们焦头烂额地挣扎于填满的日程表和阶段性考试时，芬兰的学校却能做到几乎不开展任何标准化考试，同时维持令中国难以望其项背的教学质量。<sup id="fnref:10" class="footnote-ref"><a href="#fn:10" rel="footnote"><span class="hint--top hint--rounded" aria-label="杨东平, 从应试教育突围：树立新的教育价值观, 新浪博客, 2017年6月27日, . （[网页存档](https://web.archive.org/web/20170712155247/https://blog.sina.com.cn/s/blog_492471c80102wqqe.html)，互联网档案馆）">[10]</span></a></sup>在中国孩子们在为数不多且充斥着干预和限制的校园活动中拼命汲取可怜的自由空气时，日本高中的文化祭开展得绘声绘色：以各班级的创意活动、文艺演出、茶点摊位为主；一些高中在茶点店开展销售活动作为创业体验，包括撰写提案、寻找合作公司、校内策划竞赛、演示和售后核算。<sup id="fnref:13" class="footnote-ref"><a href="#fn:13" rel="footnote"><span class="hint--top hint--rounded" aria-label="文化祭, 维基百科, 2024年11月4日, . （日文）">[13]</span></a></sup><sup>§内容</sup>这样一个全校性的盛事，都是学生们自己合力做起来的，学校老师只起配合作用。<sup id="fnref:14" class="footnote-ref"><a href="#fn:14" rel="footnote"><span class="hint--top hint--rounded" aria-label="日本学园祭是一种怎样的活动？, 知乎, 见于 2025年1月25日, .">[14]</span></a></sup>对于大学生们来讲，这个例子更加令人印象深刻：麻省理工学院的恶作剧（hacks）传统。各位只需要从这几幅图片及图注即可顷刻感受到冲击与震撼。</p>
-<p><img src="haloharvard.jpg" srcset="/img/loading.gif" lazyload alt="2007年，为了纪念微软的热门游戏《Halo3》发售，几个 MIT 学生半夜潜入哈佛，给哈佛创始人（John Harvard）的雕像戴上头盔，装上机枪，变成《Halo3》中的士官长形象。" /></p>
-<p><img src="car.jpg" srcset="/img/loading.gif" lazyload alt="1992年，把一辆警车弄到了校内地标建筑“大圆顶”上。此事惊动了临近的波士顿媒体，照片中媒体记者在直升机里现场直播。" /></p>
-<p><img src="tetris.jpg" srcset="/img/loading.gif" lazyload alt="2012年，把校内建筑 Green Building 的一面外墙搞成俄罗斯方块游戏的显示屏。而且这个显示屏还是动态的，恶作剧的始作俑者可以通过无线遥控玩这个“史上最大的俄罗斯方块”。" /></p>
-<p><img src="vest_with_bboard_large.gif" srcset="/img/loading.gif" lazyload alt="1990年10月的某日，新任校长 Charles M. Vest 第一天去上班，竟然找不到自己的办公室。原来是某些学生戏弄他，把他办公室的门伪装成布告栏。" /></p>
+<p><img src="haloharvard.jpg" alt="2007年，为了纪念微软的热门游戏《Halo3》发售，几个 MIT 学生半夜潜入哈佛，给哈佛创始人（John Harvard）的雕像戴上头盔，装上机枪，变成《Halo3》中的士官长形象。" loading="lazy" /></p>
+<p><img src="car.jpg" alt="1992年，把一辆警车弄到了校内地标建筑“大圆顶”上。此事惊动了临近的波士顿媒体，照片中媒体记者在直升机里现场直播。" loading="lazy" /></p>
+<p><img src="tetris.jpg" alt="2012年，把校内建筑 Green Building 的一面外墙搞成俄罗斯方块游戏的显示屏。而且这个显示屏还是动态的，恶作剧的始作俑者可以通过无线遥控玩这个“史上最大的俄罗斯方块”。" loading="lazy" /></p>
+<p><img src="vest_with_bboard_large.gif" alt="1990年10月的某日，新任校长 Charles M. Vest 第一天去上班，竟然找不到自己的办公室。原来是某些学生戏弄他，把他办公室的门伪装成布告栏。" loading="lazy" /></p>
 <p>以上这些恶作剧行为<sup id="fnref:15" class="footnote-ref"><a href="#fn:15" rel="footnote"><span class="hint--top hint--rounded" aria-label="编程随想, 聊聊麻省理工学院（MIT）的恶作剧文化——阿里巴巴月饼事件随想, Blogger, 2016年9月19日, .">[15]</span></a></sup>，放在中国任何一个地方都是难以想象的，更别说大学中了。它们与中国的文化生态和政治生态格格不入。</p>
 <p>即使学生们摆脱了高考的噩梦，进入了大学，创造力也不会有充分的发育土壤。因为，在大学，新的评价体系——绩点，代替了此前的考试分数，成为了新的压力来源。越优秀的大学，绩点竞争越激烈。北京大学元培学院院长李猛曾总结：“北京大学学生的学习特点——以绩点为中心，不同层次的学生都关注绩点，关注每一门课的绩点。”<sup id="fnref:16" class="footnote-ref"><a href="#fn:16" rel="footnote"><span class="hint--top hint--rounded" aria-label="徐菁菁, 绩点为王：中国顶尖高校年轻人的囚徒困境, 搜狐网, 2020年9月20日, . （[网页存档](https://web.archive.org/web/20250129163813/https://www.sohu.com/a/419676894_105067)，互联网档案馆）">[16]</span></a></sup>功利主义再一次统治了怀抱着理想主义的年轻人的心。</p>
 <p>雅斯贝尔斯说道：“教学活动中的读、写、算的学习并不是技能的获得，而是从此参与精神生活，细心地把握其中的美，而不是外在的手的动作和理解运算。什么地方计划和知识独行武断，对精神价值大张挞伐，那么这些计划和知识就必然会变成自身目的，教育就将变成训练机器人，而人也变成单功能计算之人，在仅仅维持生命力的状况中人可能会萎缩而无法看见超越之境。”<sup id="fnref:1" class="footnote-ref"><a href="#fn:1" rel="footnote"><span class="hint--top hint--rounded" aria-label="Karl Jaspers, 什么是教育, 邹进 译, 1991年3月第一版, 德国文化丛书 (北京: 生活·读书·新知三联书店, 1991).">[1]</span></a></sup><sup>:35-36</sup></p>
@@ -694,7 +694,7 @@
             
   
   
-    <article id="comments" lazyload>
+    <article id="comments">
       
   <div id="waline"></div>
   <script type="text/javascript">
@@ -847,10 +847,6 @@
 
 
 
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
 
 
 

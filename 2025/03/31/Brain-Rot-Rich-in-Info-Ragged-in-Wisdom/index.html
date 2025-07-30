@@ -79,7 +79,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"zh.dailyminz.org","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"zh.dailyminz.org","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":["home"]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":false,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -528,7 +528,7 @@
 <p>这一切意味着什么？</p>
 <p><em>在最开始呈现一份大小适中的食物时，毋庸置疑，人们会对他们打算吃多少做一个粗略预估。例如，54%的美国成年人声称自己“吃光”为止。对这些人来说，存在一个他们自己确立的视觉暗示或基准（一个“光”盘），并且，要么吃完，要么吃饱，否则他们会一直吃下去。</em></p>
 <p>这里的关键词是视觉暗示，但如果视觉暗示被调整了呢？</p>
-<p><img src="visual-cues-flow-chart.png" srcset="/img/loading.gif" lazyload alt="" /></p>
+<p><img src="visual-cues-flow-chart.png" alt="" loading="lazy" /></p>
 <p>简而言之，该实验证明，调整视觉暗示可以使设计师改变用户的行为。注意，我在这里使用“设计师”一词。那意味着这个无底碗概念已经进入了UX设计——臭名昭著的无限滚动（infinite scroll）。</p>
 <p>一个不错的<a target="_blank" rel="noopener" href="https://twitter.com/proetrie/status/1557751702475968514">推文集</a>（tweet set）（译者注：链接已失效）很好地阐释了无限滚动的问题——</p>
 <blockquote>
@@ -555,7 +555,7 @@
 <p>有趣的是，我们的大脑并不只是追求快乐。事实上，我们大部分的动力来源于‘缓解渴望的痛苦’。当我们即将获得奖励时，多巴胺水平飙升，而一旦得到了，便会骤然下降。进化通过这样的化学机制驱动我们的期待、激励我们的行动，并最终通过满足感来减轻痛苦。而我们竟然把这种无休止的循环称之为‘乐趣’。</p>
 </blockquote>
 <p>我们现在陷入某种困境——一个无底的汤碗模型，被创造出来以提高我们的注意力水平并沉浸其中。讽刺的是，它与钩子模型完美契合——用户的好奇心被无限滚动唤起，被填入更多信息来满足好奇。</p>
-<p><img src="hook-model.jpg" srcset="/img/loading.gif" lazyload alt="" /></p>
+<p><img src="hook-model.jpg" alt="" loading="lazy" /></p>
 <p>这一切创造出了一项奇迹，名为良好UX的奇迹——它是某个富于视觉吸引力的、有帮助的事物，还是长期看来对用户健康有益的事物？设计师应当遵循什么——某个经济上有利于他却使用户令人难以容忍地上瘾的方案，还是有损利润却有利用户安全的理念，即使这意味着商业上的损失？</p>
 <p><strong>参考</strong></p>
 <ol>
@@ -581,7 +581,7 @@ Brian Wansink, James E. Painter, Jill North</li>
 <p>不过，需要注意的是，上述两项研究，仅通过荟萃分析（meta-analysis，又称元分析），即统计学方法进行研究。其研究结果仅表明相关性，但由于没有过程跟踪，不能确定“有问题的互联网使用”（Problematic Usage of Internet, PUI）和“屏幕使用紊乱”（disordered screen use behaviours）是认知能力恶化的充分条件。在更细致的层面，屏幕和娱乐程序的使用，更类似于改变了我们的认知模式。若读者有兴趣，也可以访问原始论文及其他相关资料探究，欢迎在评论区留下你的见解。</p>
 <p>仅就个人体感而言，我们越来越常见到各式各样的专注教学和辅助软件。褪去形形色色的心理学理论应用的外衣，我们也能发现这样一个现实：许许多多的现代人已经到了需要借助某种“技巧”，或者强制力，来确保注意力资源的集中调用。或许，即使当下并非信息时代社会，他们也会因为自身的遗传因素产生注意力问题，但是我们在此不讨论影响专注力的生物学因素，这并非能够轻易改变之事。然而，应当注意，回归本节的开头，现代化的侵入性的信息传递结构，是否是推波助澜的帮凶？相信大家心中一定有清楚的答案。</p>
 <p>这种主动性的信息传递方式强行获取并占据人的注意。有一个术语专门描述这种行为，称“注意力窃取”（attention theft）。最典型的例子是音乐媒体产业的“响度战争”。不过，当电平值提高到任何人都无法忍受的地步的时候，战争便会终结；但只要人仍然处于现代社会之中，这场注意力的掠夺就永远不会停止。</p>
-<p><img src="Michael_Jackson-Black_or_White_Loudness.png" srcset="/img/loading.gif" lazyload alt="不同年代的迈克尔·杰克逊的Black and White混音版本。从波形图中可以明显看出响度的提高，最终形成了一堵“墙”，是为“砖墙压缩”（brick wall limiting）。图源维基百科。" /></p>
+<p><img src="Michael_Jackson-Black_or_White_Loudness.png" alt="不同年代的迈克尔·杰克逊的Black and White混音版本。从波形图中可以明显看出响度的提高，最终形成了一堵“墙”，是为“砖墙压缩”（brick wall limiting）。图源维基百科。" loading="lazy" /></p>
 <h2 id="救赎之道……">救赎之道……</h2>
 <p>总而言之，思维的简单化偏好，“先进”的用户体验设计和社会信息流结构，在我看来是导致“精神和智力状态的退化”和过度消遣内容使用的三个主要原因。</p>
 <p>诚然，在今天，杜绝屏幕是完全不可能的事情，减少屏幕使用时间在大多数场景中也是天方夜谭。但是，我要对有意愿改变自身的读者说明的是，重要的并非屏幕使用时长，而是屏幕上显示的内容。<br />
@@ -724,7 +724,7 @@ Brian Wansink, James E. Painter, Jill North</li>
             
   
   
-    <article id="comments" lazyload>
+    <article id="comments">
       
   <div id="waline"></div>
   <script type="text/javascript">
@@ -877,10 +877,6 @@ Brian Wansink, James E. Painter, Jill North</li>
 
 
 
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
 
 
 
