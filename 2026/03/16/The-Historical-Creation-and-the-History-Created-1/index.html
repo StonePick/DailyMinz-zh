@@ -31,7 +31,7 @@
 <meta property="og:description" content="我困扰于一个问题：作为已经成为既定事实的“过去”，为什么在重新叙述与阐释的过程中变得扑朔迷离？对于同一事件的描绘与评价，为什么会出现大相径庭的多元观点？甚至，仅仅是切换一下立场和视角，对同一个历史事件，就能产生迥异且互斥的阐释与评判，这是尝试在历史文本中寻找确定性的人无法回避的问题。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-03-16T07:13:56.000Z">
-<meta property="article:modified_time" content="2026-03-16T07:22:37.446Z">
+<meta property="article:modified_time" content="2026-03-22T09:03:09.231Z">
 <meta property="article:author" content="Kawashima Iwami">
 <meta property="article:tag" content="历史学">
 <meta property="article:tag" content="哲学">
@@ -423,7 +423,7 @@
               <p id="updated-time" class="note note-info" style="display: none">
                 
                   
-                    本文最后更新于 2026-03-16T15:22:37+08:00
+                    本文最后更新于 2026-03-22T17:03:09+08:00
                   
                   
 
@@ -470,14 +470,14 @@
 <p>必须指明的是，虚构不是指对实在的虚构，而是对<strong>情节</strong>（plot）的虚构。将原始素材编入意义之网，将文本（text）置于语境（context），这一过程通过给事件赋予意义等级来实现情节化。可以参考海登·怀特的讨论：</p>
 <blockquote>
 <p>我们不妨设想一组假设的历史事件……是按时间顺序<strong>并</strong>依照句法规则组织起来的……我们会立即看出，按时间顺序排列的规则和按句法策略排列的规则之间存在着一种张力，无论后者被视为逻辑（三段论）策略还是叙事（情节结构）策略。</p>
-<p>因此，我们就有了一系列事件<br />
-（1） a,b,c,d,e,\cdots\cdots,n<br />
-这一系列事件是按时间顺序排列的，但是我们必须把它们当做情节或论证的要素来加以描写或描述，从而赋予它们以意义。该系列事件可以用许多不同的方式来编排，从而被赋予不同的意义，而又丝毫不违反按时间顺序排列的规则。我们可以把其中的几种编排方式简要描述如下：<br />
-（2） A,b,c,d,e,\cdots\cdots,n<br />
-（3） a,B,c,d,e,\cdots\cdots,n<br />
-（4） a,b,C,d,e,\cdots\cdots,n<br />
-（5） a,b,c,D,e,\cdots\cdots,n<br />
-等等。</p>
+<p>因此，我们就有了一系列事件</p>
+<p>（1） $$a,b,c,d,e,\cdots\cdots,n$$</p>
+<p>这一系列事件是按时间顺序排列的，但是我们必须把它们当做情节或论证的要素来加以描写或描述，从而赋予它们以意义。该系列事件可以用许多不同的方式来编排，从而被赋予不同的意义，而又丝毫不违反按时间顺序排列的规则。我们可以把其中的几种编排方式简要描述如下：</p>
+<p>（2） $$A,b,c,d,e,\cdots\cdots,n$$</p>
+<p>（3） $$a,B,c,d,e,\cdots\cdots,n$$</p>
+<p>（4） $$a,b,C,d,e,\cdots\cdots,n$$</p>
+<p>（5） $$a,b,c,D,e,\cdots\cdots,n$$</p>
+<p>等等。</p>
 <p>大写字母表示某些事件在整个事件系列中的特权地位，这些事件因此而具有了解释力，要么是作为解释整个系列结构的原因，要么是作为被看作特殊类型故事的整个事件系列之情节结构的象征。……<sup id="fnref:11" class="footnote-ref"><a href="#fn:11" rel="footnote"><span class="hint--top hint--rounded" aria-label="海登·怀特, 话语的转义：文化批评文集, 第1版, 译 董立河, 大象学术译丛 (大象出版社, 2011), 100. 粗体为原作者所加。">[11]</span></a></sup></p>
 </blockquote>
 <p>具有完整的开头、经过和结束，历史的故事性在此中得到体现。例如在（2）中，大写的A作为事件序列的初始原因，随后所发生的一切事件都可以通过最终追溯到它而得到说明。又如，在（4）中，作为故事情节中段的C起着举足轻重的作用，前此所有的事件都因为导向它而得到说明，后此的所有事件则都因为可以追溯到它而得到解释。而如果一个最终的事件作为全部故事所趋向的目的，那么它就规定了此前一切事件的意义和合理性。</p>
@@ -720,6 +720,12 @@
   
 
 
+  
+  
+
+
+
+
 
 
 
@@ -918,6 +924,49 @@
 
 
   <script>Fluid.plugins.imageCaption();</script>
+
+  
+      <script>
+        if (!window.MathJax) {
+          window.MathJax = {
+            tex    : {
+              inlineMath: { '[+]': [['$', '$']] }
+            },
+            loader : {
+              
+            },
+            options: {
+              renderActions: {
+                insertedScript: [200, () => {
+                  document.querySelectorAll('mjx-container').forEach(node => {
+                    let target = node.parentNode;
+                    if (target.nodeName.toLowerCase() === 'li') {
+                      target.parentNode.classList.add('has-jax');
+                    }
+                  });
+                }, '', false]
+              }
+            }
+          };
+        } else {
+          MathJax.startup.document.state(0);
+          MathJax.texReset();
+          MathJax.typeset();
+          MathJax.typesetPromise();
+        }
+
+        Fluid.events.registerRefreshCallback(function() {
+          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
+            MathJax.startup.document.state(0);
+            MathJax.texReset();
+            MathJax.typeset();
+            MathJax.typesetPromise();
+          }
+        });
+      </script>
+    
+
+  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
